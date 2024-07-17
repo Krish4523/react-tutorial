@@ -1,4 +1,20 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
+
+const ACTIONS = {
+  INCREMENT: "increment",
+  DECREMENT: "decrement",
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case ACTIONS.INCREMENT:
+      return { count: state.count + 1 };
+    case ACTIONS.DECREMENT:
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -6,6 +22,8 @@ function Home() {
   const [number, setNumber] = useState(0);
   const [age, setAge] = useState(0);
   const [username, setUsername] = useState("");
+
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (
     <>
@@ -44,7 +62,8 @@ function Home() {
         </label>
         <p>{username}</p>
       </div>
-      <div className="flex items-center justify-center gap-4">
+      <p>Tow useState for Increment & Decrement</p>
+      <div className="flex items-center justify-center gap-4 mt-2 mb-4">
         <button
           onClick={() => {
             if (number < 10) setNumber(number + 1);
@@ -59,6 +78,22 @@ function Home() {
           }}
         >
           ↓
+        </button>
+      </div>
+      <p>Single useReducer for Increment & Decrement</p>
+      <div className="mt-2 flex items-center justify-center gap-4">
+        <button
+          className="py-2 px-4"
+          onClick={() => dispatch({ type: ACTIONS.DECREMENT })}
+        >
+          ↓
+        </button>
+        {state.count}
+        <button
+          className="py-2 px-4"
+          onClick={() => dispatch({ type: ACTIONS.INCREMENT })}
+        >
+          ↑
         </button>
       </div>
     </>
