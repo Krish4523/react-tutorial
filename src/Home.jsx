@@ -62,7 +62,7 @@ function Home() {
         </label>
         <p>{username}</p>
       </div>
-      <p>Tow useState for Increment & Decrement</p>
+      <p>Two useState for Increment & Decrement</p>
       <div className="flex items-center justify-center gap-4 mt-2 mb-4">
         <button
           onClick={() => {
