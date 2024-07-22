@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavItem ({ href, item }) {
+function NavItem({ href, item }) {
   return (
     <li>
       <NavLink
@@ -8,7 +8,7 @@ function NavItem ({ href, item }) {
         className={({ isActive }) =>
           `${
             isActive
-              ? "text-blue-300 hover:text-blue-200"
+              ? "pb-2 text-blue-300 hover:text-blue-200 border-b-2 border-blue-300"
               : "text-white hover:text-gray-200"
           }`
         }
