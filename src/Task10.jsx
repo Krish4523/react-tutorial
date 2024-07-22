@@ -1,5 +1,4 @@
 import { createContext } from "react";
-
 import { C1 } from "./C1.jsx";
 import { Comp } from "./Comp.jsx";
 import { Component1 } from "./Component1.jsx";

@@ -12,6 +12,7 @@ import { Task7 } from "./Task7";
 import { Task8 } from "./Task8";
 import { Task9 } from "./Task9";
 import { Task10 } from "./Task10";
+import { Task11 } from "./Task11.jsx";
 
 const info = { model: "Grand i10", brand: "Hyundai" };
 const students = [
@@ -31,6 +32,7 @@ const links = [
   { href: "/task8", item: "Task 8" },
   { href: "/task9", item: "Task 9" },
   { href: "/task10", item: "Task 10" },
+  { href: "/task11", item: "Task 11" },
 ];
 
 function App() {
@@ -53,6 +55,7 @@ function App() {
           <Route path="/task8" element={<Task8 />} />
           <Route path="/task9" element={<Task9 students={students} />} />
           <Route path="/task10" element={<Task10 />} />
+          <Route path="/task11" element={<Task11 />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
