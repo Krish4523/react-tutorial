@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Wireless Mouse",
+    "brand": "Logitech",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_NyqpPs49i3GwYxpdWVdISw8B9VkPu2qok0oStFFFrfEfUMkL_8o9yrZyHmwQNa1vy4&usqp=CAU",
+    "price": 25.99
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "brand": "Corsair",
+    "image": "https://elitehubs.com/cdn/shop/files/Corsair-K70-RGB-PRO-e1676536195495.jpg?v=1695335538",
+    "price": 79.99
+  },
+  {
+    "name": "Gaming Headset",
+    "brand": "SteelSeries",
+    "image": "https://elitehubs.com/cdn/shop/products/arctis-7-black-2019-edition-image-main-600x600-1-2.jpg?v=1683969550&width=533",
+    "price": 49.99
+  },
+  {
+    "name": "4K Monitor",
+    "brand": "Samsung",
+    "image": "https://www.nextstore.com.kw/media/catalog/product/cache/1913860e7352e75eb6626835cd95d7bd/l/u/lu32j590uqmxue_0007_layer_2 ",
+    "price": 299.99
+  },
+  {
+    "name": "Portable SSD",
+    "brand": "SanDisk",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CcOiNpPx6xNTwE8c1oOPDFGWjgW9CZ5ICA&usqp=CAU",
+    "price": 89.99
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "brand": "Logitech",
+    "image": "https://placehold.co/150",
+    "price": 45.99
+  },
+  {
+    "name": "Gaming Mouse",
+    "brand": "Corsair",
+    "image": "https://placehold.co/150",
+    "price": 59.99
+  },
+  {
+    "name": "Gaming Keyboard",
+    "brand": "SteelSeries",
+    "image": "https://placehold.co/150",
+    "price": 89.99
+  },
+  {
+    "name": "Curved Monitor",
+    "brand": "Samsung",
+    "image": "https://placehold.co/150",
+    "price": 249.99
+  },
+  {
+    "name": "USB Flash Drive",
+    "brand": "SanDisk",
+    "image": "https://placehold.co/150",
+    "price": 19.99
+  }
+]
