@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 
 const ACTIONS = {
   INCREMENT: "increment",
@@ -22,6 +22,13 @@ function Home() {
   const [number, setNumber] = useState(0);
   const [age, setAge] = useState(0);
   const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    console.log("Count Changed");
+    return () => {
+      console.log("Cleaned");
+    };
+  }, [count]);
 
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
@@ -62,7 +69,7 @@ function Home() {
         </label>
         <p>{username}</p>
       </div>
-      <p>Two useState for Increment & Decrement</p>
+      {/*useState for Increment & Decrement*/}
       <div className="flex items-center justify-center gap-4 mt-2 mb-4">
         <button
           onClick={() => {
@@ -80,7 +87,7 @@ function Home() {
           ↓
         </button>
       </div>
-      <p>Single useReducer for Increment & Decrement</p>
+      {/*useReducer for Increment & Decrement*/}
       <div className="mt-2 flex items-center justify-center gap-4">
         <button
           className="py-2 px-4"

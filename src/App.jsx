@@ -15,6 +15,8 @@ import { Task10 } from "./Task10";
 import { Task11 } from "./Task11.jsx";
 import { Task12 } from "./Task12.jsx";
 import { Task13 } from "./Task13.jsx";
+import { T1 } from "./T1.jsx";
+import { Clock } from "./Clock.jsx";
 
 const info = { model: "Grand i10", brand: "Hyundai" };
 const students = [
@@ -37,6 +39,8 @@ const links = [
   { href: "/task11", item: "Task 11" },
   { href: "/task12", item: "Task 12" },
   { href: "/task13", item: "Task 13" },
+  { href: "/task14", item: "Task 14" },
+  { href: "/task15", item: "Clock" },
 ];
 
 function App() {
@@ -62,6 +66,8 @@ function App() {
           <Route path="/task11" element={<Task11 />} />
           <Route path="/task12" element={<Task12 />} />
           <Route path="/task13" element={<Task13 />} />
+          <Route path="/task14" element={<T1 />} />
+          <Route path="/task15" element={<Clock />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>

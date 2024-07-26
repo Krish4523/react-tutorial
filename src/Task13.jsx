@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import data from "./product/data.json";
+import products from "./product/data.json";
 
 export function Task13() {
-  const [products, setProducts] = useState(data);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedBrand, setSelectedBrand] = useState("");
 
   // Get unique brands from the products data
-  const uniqueBrands = [...new Set(data.map((product) => product.brand))];
+  const uniqueBrands = [...new Set(products.map((product) => product.brand))];
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
