@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FirstName, LastName } from "./Task10.jsx";
+import { FirstName, LastName } from "../tasks/Task10.jsx";
 
 export function C3() {
   const fname = useContext(FirstName);

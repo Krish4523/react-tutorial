@@ -1,7 +1,7 @@
 import { createContext } from "react";
-import { C1 } from "./C1.jsx";
-import { Comp } from "./Comp.jsx";
-import { Component1 } from "./Component1.jsx";
+import { C1 } from "../components/C1.jsx";
+import { Comp } from "../components/Comp.jsx";
+import { Component1 } from "../components/Component1.jsx";
 
 export const FirstName = createContext("");
 export const LastName = createContext("");

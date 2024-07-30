@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import products from "./product/data.json";
+import products from "../utils/products.json";
 
 export function Task13() {
   const [searchTerm, setSearchTerm] = useState("");

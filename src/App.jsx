@@ -1,22 +1,22 @@
 import "./App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./Home.jsx";
-import Navbar from "./Navbar";
-import { Task1 } from "./Task1";
-import { Task2 } from "./Task2";
-import { Task3 } from "./Task3";
-import { Task4 } from "./Task4";
-import { Task5 } from "./Task5";
-import { Task6 } from "./Task6";
-import { Task7 } from "./Task7";
-import { Task8 } from "./Task8";
-import { Task9 } from "./Task9";
-import { Task10 } from "./Task10";
-import { Task11 } from "./Task11.jsx";
-import { Task12 } from "./Task12.jsx";
-import { Task13 } from "./Task13.jsx";
-import { T1 } from "./T1.jsx";
-import { Clock } from "./Clock.jsx";
+import Navbar from "./components/Navbar";
+import { Task1 } from "./tasks/Task1";
+import { Task2 } from "./tasks/Task2";
+import { Task3 } from "./tasks/Task3";
+import { Task4 } from "./tasks/Task4";
+import { Task5 } from "./tasks/Task5";
+import { Task6 } from "./tasks/Task6";
+import { Task7 } from "./tasks/Task7";
+import { Task8 } from "./tasks/Task8";
+import { Task9 } from "./tasks/Task9";
+import { Task10 } from "./tasks/Task10";
+import { Task11 } from "./tasks/Task11.jsx";
+import { Task12 } from "./tasks/Task12.jsx";
+import { Task13 } from "./tasks/Task13.jsx";
+import { T1 } from "./components/T1.jsx";
+import { Clock } from "./tasks/Clock.jsx";
 
 const info = { model: "Grand i10", brand: "Hyundai" };
 const students = [
