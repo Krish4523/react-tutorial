@@ -4,7 +4,7 @@ import axios from "axios";
 
 const AxiosDemo = () => {
   const [post, setPost] = useState("");
-  const [joke, setJoke] = useState([]);
+  // const [joke, setJoke] = useState([]);
   useEffect(() => {
     axios
       .get("https://dog.ceo/api/breeds/image/random")
