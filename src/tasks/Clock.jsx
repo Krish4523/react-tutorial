@@ -5,9 +5,10 @@ export function Clock() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
+    console.log("Rendered");
     const interval = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interval); // Cleanup the interval on component unmount
-  });
+  }, []);
 
   return (
     <h1 className="text-[4rem] font-bold font-mono">

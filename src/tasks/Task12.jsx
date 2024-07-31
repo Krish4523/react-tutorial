@@ -32,6 +32,9 @@ export function Task12() {
           onChange={(e) => setCity(e.target.value)}
           className="px-4 py-2 rounded-md"
         >
+          <option selected disabled hidden>
+            Select City
+          </option>
           <option value="Ahmedabad">Ahmedabad</option>
           <option value="Surat">Surat</option>
           <option value="Baroda">Baroda</option>
@@ -62,5 +65,4 @@ export function Task12() {
       </div>
     </form>
   );
-  /* */
 }
