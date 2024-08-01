@@ -18,6 +18,7 @@ import { Task13 } from "./tasks/Task13.jsx";
 import { T1 } from "./components/T1.jsx";
 import { Clock } from "./tasks/Clock.jsx";
 import { FormExample } from "./tasks/FormExample.jsx";
+import Ex from "./components/Ex.jsx";
 
 const info = { model: "Grand i10", brand: "Hyundai" };
 const students = [
@@ -71,6 +72,7 @@ function App() {
           <Route path="/task14" element={<T1 />} />
           <Route path="/task15" element={<Clock />} />
           <Route path="/form" element={<FormExample />} />
+          <Route path="/ex" element={<Ex />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
